@@ -38,14 +38,14 @@
 clc; clear;
 
 % Add paths:
-addpath(genpath('..\..\helperFunctions\'));
-addpath('..\..\dataModels\');
+addpath(genpath('../../helperFunctions/'));
+addpath('../../dataModels/');
 
 % Check if the code needs to run in legacy mode (if MATLAB is older than
 % v2013b and the 'table' datatype has not yet been introduced, a folder
 % containing a table spoofer is added to the path, see
 % ..\..\helperFunctions\LEGACY\):
-legacyModeCheck();
+% legacyModeCheck(); %B.X.: no need
 
 % Convert files (to save time, comment the line below out if the edf files
 % have already been converted to mat files):
